@@ -17,15 +17,12 @@
         "types/index.d.ts"
     ],
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info"
     },
     "types": "types/index.d.ts",
     "jest": {
         "testEnvironment": "node",
-        "collectCoverage": true,
-        "transform": {
-            "^.+\\.tsx?$": "ts-jest"
-        },
         "testPathIgnorePatterns": [
             "/node_modules/"
         ]

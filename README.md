@@ -1,4 +1,5 @@
 # minimalist-queue
+[![Build Status](https://app.travis-ci.com/o0sh4d0w0o/minimalist-queue.svg?branch=main)](https://app.travis-ci.com/o0sh4d0w0o/minimalist-queue)
 [![Coverage Status](https://coveralls.io/repos/github/o0sh4d0w0o/minimalist-queue/badge.svg?branch=main)](https://coveralls.io/github/o0sh4d0w0o/minimalist-queue?branch=main)
 
 > A node minimalist queue module without dependencies
