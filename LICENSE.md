@@ -1,5 +1,5 @@
 
-Copyright (c) 2021, zdazd <azdazd@adazd.azdazd>
+Copyright (c) 2021, sh4d0w <sephiroth01@laposte.net>
 
 Permission to use, copy, modify, and/or distribute this software for any
 purpose with or without fee is hereby granted, provided that the above

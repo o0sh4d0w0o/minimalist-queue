@@ -1,0 +1,42 @@
+{
+    "author": "c.neff",
+    "license": "ISC",
+    "keywords": [
+        "queue",
+        "jobs",
+        "tasks",
+        "job",
+        "task"
+    ],
+    "name": "minimalist-queue",
+    "version": "1.0.0",
+    "description": "A node minimalist queue module",
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "types/index.d.ts"
+    ],
+    "scripts": {
+        "test": "jest"
+    },
+    "types": "types/index.d.ts",
+    "jest": {
+        "testEnvironment": "node",
+        "collectCoverage": true,
+        "transform": {
+            "^.+\\.tsx?$": "ts-jest"
+        },
+        "testPathIgnorePatterns": [
+            "/node_modules/"
+        ]
+    },
+    "engines": {
+        "node": ">= 12"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.0.3",
+        "coveralls": "^3.1.1",
+        "jest": "^27.4.3",
+        "ts-jest": "^27.1.0"
+    }
+}
