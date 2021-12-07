@@ -94,6 +94,23 @@ test("Queue timeout", () => {
         queue.start();
     });
 });
+
+test("Queue timeout to false should disabled timeout", () => {
+    return new Promise((resolve) => {
+        const timeout = false;
+        const queue = new Queue({ timeout });
+
+        queue.on(QueueEvents.TASK_DONE, (data) => {
+            expect(data.result).toBe(43);
+            resolve();
+        });
+
+        queue.addTask(asyncTask2);
+
+        queue.start();
+    });
+});
+
 test("Queue concurrency 1", () => {
     return new Promise((resolve, reject) => {
         const queue = new Queue({ concurrency: 1 });
@@ -174,9 +191,11 @@ test("Queue removeTask", () => {
 
     const removedTask1 = queue.removeTask(queueTask4);
     const removedTask2 = queue.removeTask(queueTask3);
+    const removedTask3 = queue.removeTask(queueTask3);
 
     expect(removedTask1).toBe(queueTask4);
     expect(removedTask2).toBe(queueTask3);
+    expect(removedTask3).toBe(queueTask3);
 });
 
 test("Queue clear", () => {

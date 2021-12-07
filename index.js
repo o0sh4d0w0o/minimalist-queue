@@ -212,9 +212,7 @@ class QueueTask extends EventEmitter {
     }
 
     #jobEnd(result) {
-        if (this.#endTime === 0n) {
-            this.#endTime = process.hrtime.bigint();
-        }
+        this.#endTime = process.hrtime.bigint();
 
         clearTimeout(this.#timeoutID);
 
