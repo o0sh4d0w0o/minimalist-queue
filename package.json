@@ -8,6 +8,10 @@
         "job",
         "task"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/o0sh4d0w0o/minimalist-queue.git"
+    },
     "name": "minimalist-queue",
     "version": "1.0.1",
     "description": "A node minimalist queue module",
