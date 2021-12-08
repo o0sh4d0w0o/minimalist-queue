@@ -1,4 +1,5 @@
 # minimalist-queue
+[![Version](https://img.shields.io/npm/v/minimalist-queue.svg)](https://www.npmjs.com/package/minimalist-queue)
 [![Build Status](https://app.travis-ci.com/o0sh4d0w0o/minimalist-queue.svg?branch=main)](https://app.travis-ci.com/o0sh4d0w0o/minimalist-queue)
 [![Coverage Status](https://coveralls.io/repos/github/o0sh4d0w0o/minimalist-queue/badge.svg?branch=main)](https://coveralls.io/github/o0sh4d0w0o/minimalist-queue?branch=main)
 
