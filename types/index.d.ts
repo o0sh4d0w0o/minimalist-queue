@@ -1,6 +1,7 @@
 import { EventEmitter } from "events";
 
-export interface Queue extends EventEmitter {
+export class Queue extends EventEmitter {
+    constructor(options: options);
     /**
      * Return the list of added tasks.
      */
@@ -56,34 +57,35 @@ export interface options {
     autoStart?: boolean;
 }
 
-export interface QueueEvents {
+export class QueueEvents {
     /**
      * Event string when a task start
      */
-    get TASK_START(): string;
+    static get TASK_START(): string;
 
     /**
      * Event string when a task done
      */
-    get TASK_DONE(): string;
+    static get TASK_DONE(): string;
 
     /**
      * Event string when a task failed
      */
-    get TASK_FAILED(): string;
+    static get TASK_FAILED(): string;
 
     /**
      * Event string when queue start
      */
-    get START(): string;
+    static get START(): string;
 
     /**
      * Event string when queue is done
      */
-    get DONE(): string;
+    static get DONE(): string;
 }
 
-export interface QueueTask extends EventEmitter {
+export class QueueTask extends EventEmitter {
+    constructor(job: Function, timeout: number);
     /**
      * Id of the the queue task
      */
