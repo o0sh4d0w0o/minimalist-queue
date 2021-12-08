@@ -1,6 +1,6 @@
 {
     "author": "c.neff",
-    "license": "ISC",
+    "license": "MIT",
     "keywords": [
         "queue",
         "jobs",
