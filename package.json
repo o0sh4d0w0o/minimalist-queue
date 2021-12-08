@@ -9,7 +9,7 @@
         "task"
     ],
     "name": "minimalist-queue",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A node minimalist queue module",
     "main": "index.js",
     "files": [
